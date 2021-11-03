@@ -15,6 +15,7 @@ class Director:
             self.do_outputs
 
     def get_inputs(self):
+        # Example comment
         pass
 
     def do_updates(self):
