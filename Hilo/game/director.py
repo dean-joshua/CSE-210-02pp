@@ -16,6 +16,7 @@ class Director:
 
     def get_inputs(self):
         # Example comment 
+        # Example comment 2
         #Example comment 3
         pass
 
