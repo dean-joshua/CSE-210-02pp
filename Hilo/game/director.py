@@ -15,6 +15,7 @@ class Director:
             self.do_outputs
 
     def get_inputs(self):
+        '''hi'''
         pass
 
     def do_updates(self):
