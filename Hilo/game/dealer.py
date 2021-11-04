@@ -23,7 +23,16 @@ class Dealer:
 
     def get_h_or_l(self):
         '''Asks the user for their guess as h or l.'''
-        self.h_or_l = input("Higher or Lower? [h/l]: ")
+        guessing = True
+        while guessing:
+            try:
+                self.h_or_l = input("Higher or Lower? [h/l]: ")
+                if self.h_or_l.lower() == 'h' or self.h_or_l.lower() == 'l':
+                    guessing = False
+                else:
+                    print("Needs to be h or l.")
+            except ValueError:
+                print("Needs to be a string or int")
         assert self.h_or_l in ["h","l"], "Should be h or l"
 
     def get_points(self):
