@@ -6,7 +6,7 @@ class Dealer:
         self.current_card = 0
         self.next_card = 0
         self.h_or_l = ""
-        pass
+
 
     def draw_card(self):
         '''A draw card method that pulls a new card'''
@@ -21,10 +21,22 @@ class Dealer:
         '''A next card method. The dealer draws the next card'''
         self.next_card = self.draw_card()
 
-    def get_h_or_l():
-        pass
+    def get_h_or_l(self):
+        '''Asks the user for their guess as h or l.'''
+        self.h_or_l = input("Higher or Lower? [h/l]: ")
+        assert self.h_or_l in ["h","l"], "Should be h or l"
 
-    def get_points():
-        pass
+    def get_points(self):
+        '''Add points to local points value depending on guess. (to be added to director points)'''
+        if self.next_card > self.current_card:
+            if self.h_or_l == "h":
+                return 100
+            else:
+                return 75
+        elif self.current_card > self.next_card:
+            if self.h_or_l == "l":
+                return 100
+            else:
+                return 75
 
   
