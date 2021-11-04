@@ -21,8 +21,8 @@ class Director:
 
     def get_inputs(self):
 
-        self.get_current_card()
-        self.get_next_card()
+        self.dealer.get_current_card()
+        self.dealer.get_next_card()
         
 
         
