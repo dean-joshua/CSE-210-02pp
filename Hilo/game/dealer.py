@@ -21,4 +21,10 @@ class Dealer:
         '''A next card method. The dealer draws the next card'''
         self.next_card = self.draw_card()
 
+    def get_h_or_l():
+        pass
+
+    def get_points():
+        pass
+
   
